@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robert Élagage – Élagueur Paysagiste à Toulon | Var 83</title>
+  <meta name="description" content="Robert Élagage, paysagiste et élagueur professionnel à Toulon (83). Élagage, abattage, taille de haies, débroussaillage dans le Var. Devis gratuit : 06 99 67 19 46." />
+  <meta name="keywords" content="élagueur Toulon, élagage Var, abattage arbre Toulon, taille haie Var 83, débroussaillage Toulon, paysagiste Toulon, élagage Hyères, élagage La Seyne" />
+  <link rel="canonical" href="https://robert-elagage-toulon.pro/" />
+  <meta property="og:title" content="Robert Élagage – Paysagiste à Toulon, Var" />
+  <meta property="og:description" content="Élagueur paysagiste professionnel à Toulon. Élagage, abattage, taille de haies, débroussaillage dans tout le Var." />
+  <meta property="og:url" content="https://robert-elagage-toulon.pro/" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <meta name="google-site-verification" content="RbaAplrIhrG1J1zGbeEgrwEbtyky_GS7ktcuGm5Nh54" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Robert Élagage",
+    "description": "Élagueur paysagiste professionnel à Toulon, Var. Élagage, abattage, taille de haies, débroussaillage.",
+    "url": "https://robert-elagage-toulon.pro",
+    "telephone": "0699671946",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de Siblas",
+      "addressLocality": "Toulon",
+      "postalCode": "83000",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.1298234,
+      "longitude": 5.9377602
+    },
+    "areaServed": ["Toulon", "Hyères", "La Seyne-sur-Mer", "Six-Fours-les-Plages", "Ollioules", "Sanary-sur-Mer", "Bandol", "Le Pradet", "La Valette-du-Var", "Solliès-Pont"],
+    "priceRange": "€€",
+    "openingHours": "Mo-Sa 07:30-19:00"
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --vert: #1a4a1a;
+      --vert-m: #2d6e2d;
+      --vert-l: #3d8c3d;
+      --soleil: #f5c518;
+      --soleil-d: #d4a800;
+      --creme: #faf7ef;
+      --blanc: #ffffff;
+      --texte: #1a1a18;
+      --gris: #5a5a52;
+      --gris-l: #f0ede4;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--creme);
+      color: var(--texte);
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--vert);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--soleil);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--blanc); }
+
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--soleil); }
+
+    .nav-cta {
+      background: var(--soleil);
+      color: var(--vert) !important;
+      font-weight: 700 !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--soleil-d) !important; color: var(--vert) !important; }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-burger span { display: block; width: 25px; height: 2px; background: var(--blanc); border-radius: 2px; }
+
+    .nav-mobile {
+      display: none;
+      position: fixed;
+      top: 64px; left: 0; right: 0;
+      background: var(--vert);
+      padding: 1.5rem 5vw;
+      z-index: 99;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .nav-mobile.open { display: block; }
+    .nav-mobile a { display: block; color: rgba(255,255,255,0.85); text-decoration: none; font-size: 1rem; font-weight: 500; padding: 0.8rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); transition: color 0.2s; }
+    .nav-mobile a:hover { color: var(--soleil); }
+    .nav-mobile a.nav-cta-mobile { color: var(--soleil) !important; font-weight: 700; border-bottom: none; }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      background: var(--vert);
+      display: flex; align-items: center;
+      padding: 80px 5vw 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('elagage.png') center/cover no-repeat;
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-inner { position: relative; z-index: 1; }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 60vw; height: 120vh;
+      background: radial-gradient(ellipse, rgba(245,197,24,0.12) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: var(--soleil);
+      color: var(--vert);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    h1.hero-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(4rem, 8vw, 7rem);
+      line-height: 0.95;
+      color: var(--blanc);
+      letter-spacing: 0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    h1.hero-title em {
+      font-family: 'Fraunces', serif;
+      font-style: italic;
+      color: var(--soleil);
+      font-size: 0.85em;
+    }
+
+    .hero-desc {
+      color: rgba(255,255,255,0.75);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      max-width: 480px;
+    }
+
+    .hero-btns {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--soleil);
+      color: var(--vert);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover { background: var(--soleil-d); transform: translateY(-2px); }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.4);
+      color: var(--blanc);
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover { border-color: var(--soleil); color: var(--soleil); transform: translateY(-2px); }
+
+    .hero-visual {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-end;
+    }
+
+    .hero-stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .hero-stat {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .hero-stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: var(--soleil);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.8rem;
+      margin-top: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-phone-card {
+      background: var(--soleil);
+      border-radius: 8px;
+      padding: 1.2rem 1.8rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .hero-phone-icon { font-size: 1.8rem; }
+
+    .hero-phone-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--vert);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-phone-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem;
+      color: var(--vert);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── SECTION BASE ── */
+    section { padding: 80px 5vw; }
+
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+
+    .section-tag {
+      display: inline-block;
+      background: var(--soleil);
+      color: var(--vert);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1;
+      color: var(--vert);
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.02em;
+    }
+
+    .section-desc {
+      color: var(--gris);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      max-width: 600px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--blanc); }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--creme);
+      border-radius: 8px;
+      overflow: hidden;
+      border-left: 4px solid var(--soleil);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,74,26,0.12); }
+
+    .service-card-img {
+      width: 100%; height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-card-body { padding: 1.5rem; }
+
+    .service-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+
+    .service-card h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      color: var(--vert);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      color: var(--gris);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── POURQUOI NOUS ── */
+    .pourquoi { background: var(--vert); }
+
+    .pourquoi .section-title { color: var(--blanc); }
+    .pourquoi .section-desc { color: rgba(255,255,255,0.7); }
+
+    .atouts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .atout {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .atout-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .atout h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: var(--soleil);
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .atout p { color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.6; }
+
+    /* ── ZONES ── */
+    .zones { background: var(--gris-l); }
+
+    .zones-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .zone-tag {
+      background: var(--vert);
+      color: var(--blanc);
+      padding: 0.5rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .zone-tag:hover { background: var(--vert-l); }
+
+    /* ── CONTACT ── */
+    .contact { background: var(--blanc); }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem;
+      color: var(--vert);
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .contact-detail-icon {
+      width: 44px; height: 44px;
+      background: var(--soleil);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-text strong { display: block; font-weight: 700; color: var(--texte); }
+    .contact-detail-text span { font-size: 0.9rem; color: var(--gris); }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--texte);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.8rem 1rem;
+      border: 2px solid var(--gris-l);
+      border-radius: 6px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--texte);
+      background: var(--creme);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus { border-color: var(--vert); }
+
+    .form-group textarea { resize: vertical; min-height: 120px; }
+
+    .btn-submit {
+      background: var(--vert);
+      color: var(--blanc);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .btn-submit:hover { background: var(--vert-m); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--vert);
+      padding: 40px 5vw;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      color: var(--soleil);
+      letter-spacing: 0.04em;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .footer-links {
+      display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem;
+      list-style: none; margin-bottom: 1.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--soleil); }
+
+    .footer-copy {
+      color: rgba(255,255,255,0.4);
+      font-size: 0.8rem;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-visual { align-items: stretch; }
+      .contact-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-burger { display: flex; }
+      h1.hero-title { font-size: 3.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-logo">ROBERT <span>ÉLAGAGE</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="#contact" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+  <div class="nav-burger" onclick="document.getElementById('navMobile').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="nav-mobile" id="navMobile">
+  <a href="#services" onclick="document.getElementById('navMobile').classList.remove('open')">Services</a>
+  <a href="zones.html">Zones d'intervention</a>
+  <a href="blog.html">Blog</a>
+  <a href="qui-sommes-nous.html">Qui sommes-nous</a>
+  <a href="#contact" class="nav-cta-mobile" onclick="document.getElementById('navMobile').classList.remove('open')">Devis gratuit →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-tag">🌿 Toulon & Var — Depuis plus de 10 ans</span>
+      <h1 class="hero-title">VOS ARBRES<br><em>entre de bonnes</em><br>MAINS</h1>
+      <p class="hero-desc">Élagueur paysagiste professionnel à Toulon. Élagage, abattage, taille de haies et débroussaillage dans tout le Var — devis gratuit sous 24h.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Demander un devis</a>
+        <a href="tel:0699671946" class="btn-outline">📞 06 99 67 19 46</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-stat-grid">
+        <div class="hero-stat">
+          <div class="hero-stat-num">10+</div>
+          <div class="hero-stat-label">Ans d'expérience</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">Var</div>
+          <div class="hero-stat-label">83 — Zone d'action</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Devis gratuit</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num">24h</div>
+          <div class="hero-stat-label">Délai de réponse</div>
+        </div>
+      </div>
+      <div class="hero-phone-card">
+        <span class="hero-phone-icon">📞</span>
+        <div>
+          <div class="hero-phone-label">Appelez maintenant</div>
+          <div class="hero-phone-num">06 99 67 19 46</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <span class="section-tag">Nos prestations</span>
+    <h2 class="section-title">CE QUE NOUS FAISONS</h2>
+    <p class="section-desc">Chaque intervention est réalisée avec soin, dans le respect de vos végétaux et de votre environnement.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="elagage.png" alt="Élagage d'arbres à Toulon" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">🌳</div>
+          <h3>Élagage</h3>
+          <p>Taille raisonnée pour la santé et la beauté de vos arbres. Intervention sécurisée en hauteur par des professionnels certifiés.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="abattage.png" alt="Abattage d'arbre dans le Var" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">🪓</div>
+          <h3>Abattage</h3>
+          <p>Abattage d'arbres dangereux, malades ou gênants. Technique de démontage contrôlé pour les espaces contraints.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="equipe-chantier.png" alt="Taille de haies Toulon Var" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">✂️</div>
+          <h3>Taille de haies</h3>
+          <p>Taille précise et régulière de toutes essences de haies. Résultat net et soigné, déchets évacués.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="broyage.png" alt="Débroussaillage Var DFCI" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">🌿</div>
+          <h3>Débroussaillage</h3>
+          <p>Débroussaillage réglementaire DFCI et entretien de terrains. Essentiel dans le Var pour la prévention des incendies.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="espace.png" alt="Entretien espaces verts Toulon" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">🌱</div>
+          <h3>Entretien espaces verts</h3>
+          <p>Entretien régulier de jardins, parcs et espaces verts pour particuliers et professionnels.</p>
+        </div>
+      </div>
+      <div class="service-card">
+        <img src="dessouchage.png" alt="Dessouchage broyage de souche Var" class="service-card-img" />
+        <div class="service-card-body">
+          <div class="service-icon">🪨</div>
+          <h3>Dessouchage</h3>
+          <p>Extraction complète des souches après abattage. Broyage ou extraction selon vos besoins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="pourquoi">
+  <div class="section-inner">
+    <span class="section-tag">Pourquoi nous choisir</span>
+    <h2 class="section-title">UN ARTISAN DE CONFIANCE</h2>
+    <p class="section-desc">Robert Élagage c'est une équipe locale, sérieuse et réactive, au service des particuliers et professionnels du Var.</p>
+    <div class="atouts-grid">
+      <div class="atout">
+        <div class="atout-icon">📋</div>
+        <h3>Devis gratuit</h3>
+        <p>Estimation claire et transparente sans engagement, réponse sous 24h.</p>
+      </div>
+      <div class="atout">
+        <div class="atout-icon">🛡️</div>
+        <h3>Assurance RC Pro</h3>
+        <p>Couverture complète pour tous nos chantiers, votre tranquillité d'esprit avant tout.</p>
+      </div>
+      <div class="atout">
+        <div class="atout-icon">📍</div>
+        <h3>Artisan local</h3>
+        <p>Basé à Toulon, nous intervenons dans tout le Var avec réactivité.</p>
+      </div>
+      <div class="atout">
+        <div class="atout-icon">♻️</div>
+        <h3>Déchets évacués</h3>
+        <p>Nettoyage complet du chantier et évacuation ou broyage des déchets verts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section class="zones" id="zones">
+  <div class="section-inner">
+    <span class="section-tag">Zone d'intervention</span>
+    <h2 class="section-title">TOUT LE VAR À PORTÉE</h2>
+    <p class="section-desc">Nous intervenons à Toulon et dans un rayon de 30 km alentour, couvrant les principales communes du Var.</p>
+    <div class="zones-list">
+      <span class="zone-tag">Toulon</span>
+      <span class="zone-tag">Hyères</span>
+      <span class="zone-tag">La Seyne-sur-Mer</span>
+      <span class="zone-tag">Six-Fours-les-Plages</span>
+      <span class="zone-tag">Ollioules</span>
+      <span class="zone-tag">Sanary-sur-Mer</span>
+      <span class="zone-tag">Bandol</span>
+      <span class="zone-tag">Le Pradet</span>
+      <span class="zone-tag">La Valette-du-Var</span>
+      <span class="zone-tag">Solliès-Pont</span>
+      <span class="zone-tag">Carqueiranne</span>
+      <span class="zone-tag">La Crau</span>
+      <span class="zone-tag">Cuers</span>
+      <span class="zone-tag">Pierrefeu-du-Var</span>
+      <span class="zone-tag">Signes</span>
+      <span class="zone-tag">Le Beausset</span>
+      <span class="zone-tag">La Cadière-d'Azur</span>
+      <span class="zone-tag">Saint-Cyr-sur-Mer</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <span class="section-tag">Contact</span>
+        <h2>DEMANDEZ VOTRE DEVIS GRATUIT</h2>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <strong>06 99 67 19 46</strong>
+            <span>Lun–Sam, 7h30–19h</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <strong>Toulon, Var (83)</strong>
+            <span>Intervention dans tout le Var</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">⚡</div>
+          <div class="contact-detail-text">
+            <strong>Réponse sous 24h</strong>
+            <span>Devis gratuit et sans engagement</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mvzjwqgb" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="telephone" placeholder="06 xx xx xx xx" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="adresse">Adresse</label>
+          <input type="text" id="adresse" name="adresse" placeholder="Numéro et nom de rue" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cp">Code postal</label>
+            <input type="text" id="cp" name="code_postal" placeholder="83000" />
+          </div>
+          <div class="form-group">
+            <label for="ville">Ville</label>
+            <input type="text" id="ville" name="ville" placeholder="Toulon" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Service souhaité</label>
+          <select id="service" name="service">
+            <option value="">Choisissez un service</option>
+            <option>Élagage</option>
+            <option>Abattage</option>
+            <option>Taille de haies</option>
+            <option>Débroussaillage</option>
+            <option>Entretien espaces verts</option>
+            <option>Dessouchage</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Décrivez votre projet..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Envoyer ma demande →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- QUI SOMMES NOUS -->
+<section style="background:var(--gris-l); padding:80px 5vw;">
+  <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+    <div>
+      <span style="display:inline-block;background:var(--soleil);color:var(--vert);font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.25rem .7rem;border-radius:2px;margin-bottom:1rem;">À propos</span>
+      <h2 style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,3.5rem);color:var(--vert);letter-spacing:.02em;line-height:1;margin-bottom:1.2rem;">QUI SOMMES-NOUS ?</h2>
+      <p style="color:var(--gris);font-size:1rem;line-height:1.8;margin-bottom:1rem;">Robert Élagage est une entreprise artisanale basée à <strong style="color:var(--texte);">Toulon, dans le Var (83)</strong>. Spécialisés dans l'élagage, l'abattage, la taille de haies et le débroussaillage, nous intervenons depuis plus de <strong style="color:var(--texte);">10 ans</strong> auprès des particuliers et professionnels.</p>
+      <p style="color:var(--gris);font-size:1rem;line-height:1.8;margin-bottom:1.5rem;">Notre connaissance du terrain méditerranéen — ses essences, son climat, ses contraintes DFCI — fait notre force. Chaque chantier est traité avec soin et professionnalisme.</p>
+      <a href="qui-sommes-nous.html" style="display:inline-block;background:var(--vert);color:var(--blanc);font-weight:700;font-size:.95rem;padding:.8rem 1.8rem;border-radius:4px;text-decoration:none;">En savoir plus →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+      <div style="background:var(--vert);border-radius:8px;padding:2rem;text-align:center;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--soleil);line-height:1;">10+</div>
+        <div style="color:rgba(255,255,255,.7);font-size:.8rem;margin-top:.4rem;text-transform:uppercase;letter-spacing:.08em;">Ans d'expérience</div>
+      </div>
+      <div style="background:var(--vert);border-radius:8px;padding:2rem;text-align:center;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--soleil);line-height:1;">Var</div>
+        <div style="color:rgba(255,255,255,.7);font-size:.8rem;margin-top:.4rem;text-transform:uppercase;letter-spacing:.08em;">Zone d'action 83</div>
+      </div>
+      <div style="background:var(--vert);border-radius:8px;padding:2rem;text-align:center;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--soleil);line-height:1;">RC</div>
+        <div style="color:rgba(255,255,255,.7);font-size:.8rem;margin-top:.4rem;text-transform:uppercase;letter-spacing:.08em;">Pro assuré</div>
+      </div>
+      <div style="background:var(--vert);border-radius:8px;padding:2rem;text-align:center;">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--soleil);line-height:1;">24h</div>
+        <div style="color:rgba(255,255,255,.7);font-size:.8rem;margin-top:.4rem;text-transform:uppercase;letter-spacing:.08em;">Délai de réponse</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-logo">ROBERT ÉLAGAGE</span>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 Robert Élagage – Paysagiste à Toulon, Var 83 · Tous droits réservés</p>
+  <p class="footer-copy" style="margin-top:.5rem;">Site créé par <a href="https://sakuragroup.fr" style="color:var(--soleil);text-decoration:none;">Agence Sakura Group</a></p>
+</footer>
+
+</body>
+</html>
