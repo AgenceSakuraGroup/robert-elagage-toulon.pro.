@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zones d'intervention – Robert Élagage Toulon | Var 83</title>
+  <meta name="description" content="Robert Élagage intervient à Toulon, Hyères, La Seyne-sur-Mer, Six-Fours, Sanary, Bandol et dans tout le Var (83). Élagage, abattage, débroussaillage. Devis gratuit : 06 99 67 19 46." />
+  <link rel="canonical" href="https://robert-elagage-toulon.pro/zones.html" />
+  <meta property="og:title" content="Zones d'intervention – Robert Élagage Toulon Var" />
+  <meta property="og:description" content="Élagueur paysagiste intervenant dans tout le Var : Toulon, Hyères, La Seyne, Six-Fours, Sanary, Bandol et alentours." />
+  <meta property="og:url" content="https://robert-elagage-toulon.pro/zones.html" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --vert: #1a4a1a; --vert-m: #2d6e2d; --vert-l: #3d8c3d;
+      --soleil: #f5c518; --soleil-d: #d4a800;
+      --creme: #faf7ef; --blanc: #ffffff;
+      --texte: #1a1a18; --gris: #5a5a52; --gris-l: #f0ede4;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--creme); color: var(--texte); overflow-x: hidden; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--vert);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 64px;
+    }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--soleil); letter-spacing: 0.04em; text-decoration: none; }
+    .nav-logo span { color: var(--blanc); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--soleil); }
+    .nav-cta { background: var(--soleil); color: var(--vert) !important; font-weight: 700 !important; padding: 0.5rem 1.2rem; border-radius: 4px; }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+
+    .page-hero {
+      background: var(--vert);
+      padding: 120px 5vw 60px;
+      text-align: center;
+    }
+    .page-hero-tag {
+      display: inline-block; background: var(--soleil); color: var(--vert);
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em;
+      text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; margin-bottom: 1rem;
+    }
+    .page-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      color: var(--blanc); letter-spacing: 0.02em; line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .page-hero h1 em { font-family: 'Fraunces', serif; font-style: italic; color: var(--soleil); }
+    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 580px; margin: 0 auto; line-height: 1.7; }
+
+    section { padding: 80px 5vw; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-tag { display: inline-block; background: var(--soleil); color: var(--vert); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; margin-bottom: 1rem; }
+    .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--vert); margin-bottom: 1rem; letter-spacing: 0.02em; }
+    .section-desc { color: var(--gris); font-size: 1.05rem; line-height: 1.7; max-width: 640px; margin-bottom: 3rem; }
+
+    .zones-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+    .zone-card {
+      background: var(--blanc);
+      border-radius: 8px;
+      padding: 2rem;
+      border-top: 4px solid var(--soleil);
+      box-shadow: 0 2px 12px rgba(26,74,26,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .zone-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(26,74,26,0.12); }
+    .zone-card h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.8rem; color: var(--vert); letter-spacing: 0.03em; margin-bottom: 0.5rem;
+    }
+    .zone-card .zone-dep {
+      display: inline-block; background: var(--vert); color: var(--blanc);
+      font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.6rem;
+      border-radius: 50px; margin-bottom: 1rem;
+    }
+    .zone-card p { color: var(--gris); font-size: 0.95rem; line-height: 1.65; margin-bottom: 1rem; }
+    .zone-card .communes { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .zone-card .commune {
+      background: var(--gris-l); color: var(--texte);
+      font-size: 0.8rem; padding: 0.25rem 0.6rem; border-radius: 50px;
+    }
+
+    .cta-band {
+      background: var(--soleil);
+      padding: 60px 5vw;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      color: var(--vert); letter-spacing: 0.02em; margin-bottom: 1rem;
+    }
+    .cta-band p { color: var(--vert); font-size: 1rem; margin-bottom: 1.5rem; opacity: 0.85; }
+    .btn-dark {
+      background: var(--vert); color: var(--blanc);
+      font-weight: 700; font-size: 1rem;
+      padding: 0.9rem 2rem; border-radius: 4px;
+      text-decoration: none; display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-dark:hover { background: var(--vert-m); }
+
+    footer {
+      background: var(--vert); padding: 40px 5vw; text-align: center;
+    }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--soleil); letter-spacing: 0.04em; margin-bottom: 1rem; display: block; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; list-style: none; margin-bottom: 1.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--soleil); }
+    .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">ROBERT <span>ÉLAGAGE</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-tag">Zone d'intervention</span>
+  <h1>ÉLAGAGE DANS TOUT<br><em>le Var</em></h1>
+  <p>Robert Élagage intervient à Toulon et dans un rayon de 30 km. Déplacement rapide, devis gratuit sous 24h.</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <span class="section-tag">Nos secteurs</span>
+    <h2 class="section-title">OÙ NOUS INTERVENONS</h2>
+    <p class="section-desc">Basés à Toulon, nous couvrons l'ensemble du Var occidental. Voici les principales communes de notre zone d'intervention.</p>
+    <div class="zones-grid">
+
+      <div class="zone-card">
+        <h2>Toulon</h2>
+        <span class="zone-dep">83000 — Var</span>
+        <p>Notre ville de base. Nous intervenons sur tous les quartiers toulonnais pour l'élagage, l'abattage et l'entretien de vos espaces verts.</p>
+        <div class="communes">
+          <span class="commune">Cap Brun</span>
+          <span class="commune">Le Mourillon</span>
+          <span class="commune">La Rode</span>
+          <span class="commune">Sainte-Anne</span>
+          <span class="commune">Pont du Las</span>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h2>Hyères</h2>
+        <span class="zone-dep">83400 — Var</span>
+        <p>Deuxième ville du Var, Hyères et ses nombreux jardins méditerranéens font partie de notre zone d'action privilégiée.</p>
+        <div class="communes">
+          <span class="commune">Hyères-centre</span>
+          <span class="commune">Presqu'île de Giens</span>
+          <span class="commune">L'Almanarre</span>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h2>La Seyne-sur-Mer</h2>
+        <span class="zone-dep">83500 — Var</span>
+        <p>Élagage et entretien paysager à La Seyne-sur-Mer. Débroussaillage et taille de haies pour particuliers et copropriétés.</p>
+        <div class="communes">
+          <span class="commune">Tamaris</span>
+          <span class="commune">Saint-Elme</span>
+          <span class="commune">Les Sablettes</span>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h2>Six-Fours-les-Plages</h2>
+        <span class="zone-dep">83140 — Var</span>
+        <p>Intervention régulière à Six-Fours pour l'élagage de pins parasols, palmiers et arbres côtiers méditerranéens.</p>
+        <div class="communes">
+          <span class="commune">Le Brusc</span>
+          <span class="commune">Bonnegrâce</span>
+          <span class="commune">La Coudoulière</span>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h2>Sanary-sur-Mer & Bandol</h2>
+        <span class="zone-dep">83110 / 83150 — Var</span>
+        <p>Élagage de jardins provençaux, taille de haies et débroussaillage sur les communes viticoles et balnéaires du Var.</p>
+        <div class="communes">
+          <span class="commune">Sanary-sur-Mer</span>
+          <span class="commune">Bandol</span>
+          <span class="commune">Ollioules</span>
+          <span class="commune">Le Beausset</span>
+        </div>
+      </div>
+
+      <div class="zone-card">
+        <h2>Autres communes du Var</h2>
+        <span class="zone-dep">83 — Var</span>
+        <p>Nous intervenons également dans toutes les communes du Var dans un rayon de 30 km autour de Toulon.</p>
+        <div class="communes">
+          <span class="commune">Le Pradet</span>
+          <span class="commune">La Valette-du-Var</span>
+          <span class="commune">Solliès-Pont</span>
+          <span class="commune">Carqueiranne</span>
+          <span class="commune">La Crau</span>
+          <span class="commune">Cuers</span>
+          <span class="commune">La Cadière-d'Azur</span>
+          <span class="commune">Saint-Cyr-sur-Mer</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>VOUS ÊTES DANS LE VAR ?</h2>
+  <p>Contactez-nous pour un devis gratuit — réponse garantie sous 24h.</p>
+  <a href="index.html#contact" class="btn-dark">Demander un devis gratuit</a>
+</div>
+
+<footer>
+  <span class="footer-logo">ROBERT ÉLAGAGE</span>
+  <ul class="footer-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 Robert Élagage – Paysagiste à Toulon, Var 83 · Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

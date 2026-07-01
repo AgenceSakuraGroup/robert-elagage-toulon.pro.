@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos – Robert Élagage Paysagiste à Toulon | Var 83</title>
+  <meta name="description" content="Robert Élagage, paysagiste et élagueur professionnel basé à Toulon depuis plus de 10 ans. Artisan local, assurance RC Pro, devis gratuit : 06 99 67 19 46." />
+  <link rel="canonical" href="https://robert-elagage-toulon.pro/qui-sommes-nous.html" />
+  <meta property="og:title" content="À propos – Robert Élagage Paysagiste Toulon" />
+  <meta property="og:description" content="Élagueur paysagiste professionnel à Toulon depuis plus de 10 ans. Artisan local, assurance RC Pro." />
+  <meta property="og:url" content="https://robert-elagage-toulon.pro/qui-sommes-nous.html" />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=Fraunces:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --vert: #1a4a1a; --vert-m: #2d6e2d; --vert-l: #3d8c3d;
+      --soleil: #f5c518; --soleil-d: #d4a800;
+      --creme: #faf7ef; --blanc: #ffffff;
+      --texte: #1a1a18; --gris: #5a5a52; --gris-l: #f0ede4;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--creme); color: var(--texte); overflow-x: hidden; }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: var(--vert);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5vw; height: 64px;
+    }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.6rem; color: var(--soleil); letter-spacing: 0.04em; text-decoration: none; }
+    .nav-logo span { color: var(--blanc); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--soleil); }
+    .nav-cta { background: var(--soleil); color: var(--vert) !important; font-weight: 700 !important; padding: 0.5rem 1.2rem; border-radius: 4px; }
+    @media (max-width: 768px) { .nav-links { display: none; } }
+
+    .page-hero {
+      background: var(--vert);
+      padding: 120px 5vw 60px;
+      text-align: center;
+    }
+    .page-hero-tag { display: inline-block; background: var(--soleil); color: var(--vert); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; margin-bottom: 1rem; }
+    .page-hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 6vw, 5rem); color: var(--blanc); letter-spacing: 0.02em; line-height: 1; margin-bottom: 1rem; }
+    .page-hero h1 em { font-family: 'Fraunces', serif; font-style: italic; color: var(--soleil); }
+    .page-hero p { color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 580px; margin: 0 auto; line-height: 1.7; }
+
+    section { padding: 80px 5vw; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section-tag { display: inline-block; background: var(--soleil); color: var(--vert); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 2px; margin-bottom: 1rem; }
+    .section-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.5rem, 5vw, 3.5rem); color: var(--vert); margin-bottom: 1rem; letter-spacing: 0.02em; }
+    .section-desc { color: var(--gris); font-size: 1.05rem; line-height: 1.7; max-width: 640px; margin-bottom: 3rem; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
+
+    .about-text p {
+      color: var(--gris); font-size: 1rem; line-height: 1.8;
+      margin-bottom: 1.2rem;
+    }
+    .about-text strong { color: var(--texte); }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .about-stat {
+      background: var(--vert);
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .about-stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3rem; color: var(--soleil); line-height: 1;
+    }
+    .about-stat-label {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.8rem; margin-top: 0.4rem;
+      text-transform: uppercase; letter-spacing: 0.08em;
+    }
+
+    .valeurs { background: var(--blanc); }
+    .valeurs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .valeur-card {
+      background: var(--creme);
+      border-radius: 8px;
+      padding: 2rem;
+      border-left: 4px solid var(--soleil);
+    }
+    .valeur-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .valeur-card h3 { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--vert); letter-spacing: 0.03em; margin-bottom: 0.5rem; }
+    .valeur-card p { color: var(--gris); font-size: 0.95rem; line-height: 1.65; }
+
+    .cta-band { background: var(--soleil); padding: 60px 5vw; text-align: center; }
+    .cta-band h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 4vw, 3.5rem); color: var(--vert); letter-spacing: 0.02em; margin-bottom: 1rem; }
+    .cta-band p { color: var(--vert); font-size: 1rem; margin-bottom: 1.5rem; opacity: 0.85; }
+    .btn-dark { background: var(--vert); color: var(--blanc); font-weight: 700; font-size: 1rem; padding: 0.9rem 2rem; border-radius: 4px; text-decoration: none; display: inline-block; transition: background 0.2s; }
+    .btn-dark:hover { background: var(--vert-m); }
+
+    footer { background: var(--vert); padding: 40px 5vw; text-align: center; }
+    .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--soleil); letter-spacing: 0.04em; margin-bottom: 1rem; display: block; }
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 2rem; list-style: none; margin-bottom: 1.5rem; }
+    .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--soleil); }
+    .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">ROBERT <span>ÉLAGAGE</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Devis gratuit</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <span class="page-hero-tag">À propos</span>
+  <h1>UN ARTISAN<br><em>du Var</em><br>PASSIONNÉ</h1>
+  <p>Robert Élagage, c'est une histoire d'amour avec les arbres et le territoire varois depuis plus de 10 ans.</p>
+</div>
+
+<section>
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-tag">Notre histoire</span>
+        <h2 class="section-title">QUI SOMMES-NOUS ?</h2>
+        <p>Robert Élagage est une entreprise artisanale basée à <strong>Toulon, dans le Var (83)</strong>. Fondée avec la passion du travail bien fait et le respect de la nature, nous sommes spécialisés dans l'élagage, l'abattage, la taille de haies et le débroussaillage.</p>
+        <p>Depuis plus de <strong>10 ans</strong>, nous intervenons auprès des particuliers, des professionnels et des collectivités dans tout le Var. Notre connaissance du terrain méditerranéen — ses essences, son climat, ses contraintes DFCI — fait notre force.</p>
+        <p>Chaque chantier est traité avec <strong>soin et professionnalisme</strong>. Nous apportons le même niveau d'exigence à un jardin de particulier qu'à un grand parc ou un espace vert professionnel.</p>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat">
+          <div class="about-stat-num">10+</div>
+          <div class="about-stat-label">Ans d'expérience</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">Var</div>
+          <div class="about-stat-label">Zone d'action 83</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">100%</div>
+          <div class="about-stat-label">Devis gratuit</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-num">RC</div>
+          <div class="about-stat-label">Pro assuré</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="valeurs">
+  <div class="section-inner">
+    <span class="section-tag">Nos engagements</span>
+    <h2 class="section-title">CE QUI NOUS DISTINGUE</h2>
+    <p class="section-desc">Artisan local, nous construisons des relations de confiance durables avec nos clients.</p>
+    <div class="valeurs-grid">
+      <div class="valeur-card">
+        <div class="valeur-icon">🌿</div>
+        <h3>Respect de la nature</h3>
+        <p>Chaque intervention respecte la biologie de l'arbre. Nous taillons au bon moment, de la bonne façon, pour préserver la santé de vos végétaux.</p>
+      </div>
+      <div class="valeur-card">
+        <div class="valeur-icon">🛡️</div>
+        <h3>Sécurité avant tout</h3>
+        <p>Équipements certifiés, techniques sécurisées. Nous travaillons en hauteur avec le matériel professionnel adapté à chaque situation.</p>
+      </div>
+      <div class="valeur-card">
+        <div class="valeur-icon">📋</div>
+        <h3>Transparence</h3>
+        <p>Devis détaillé et gratuit, sans surprise. Le prix annoncé est le prix payé.</p>
+      </div>
+      <div class="valeur-card">
+        <div class="valeur-icon">⚡</div>
+        <h3>Réactivité</h3>
+        <p>Basés à Toulon, nous répondons sous 24h et intervenons rapidement dans tout le Var.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>PRÊT À TRAVAILLER AVEC NOUS ?</h2>
+  <p>Contactez-nous pour un devis gratuit — réponse garantie sous 24h.</p>
+  <a href="index.html#contact" class="btn-dark">Demander un devis gratuit</a>
+</div>
+
+<footer>
+  <span class="footer-logo">ROBERT ÉLAGAGE</span>
+  <ul class="footer-links">
+    <li><a href="index.html#services">Services</a></li>
+    <li><a href="zones.html">Zones</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="qui-sommes-nous.html">À propos</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <p class="footer-copy">© 2026 Robert Élagage – Paysagiste à Toulon, Var 83 · Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
